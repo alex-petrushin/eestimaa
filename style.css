@@ -60,6 +60,28 @@ h1 {
 	align-content: center;
 }
 
+.breaking {
+	margin: 10px 10px 10px 10px;
+	border: solid 3px red;
+	align-content: center;
+	background-color: #ffca9f;
+}
+
+.breaking:hover {
+	transform: scale(1.01);
+	background-color: #ff4800;
+	transition: 1s;
+}
+
+.breaking-header {
+	line-height: 50px;
+	text-align: center;
+}
+
+.breaking-header h3 {
+	font-size: 32px;
+}
+
 .line1 {
 	display: flex;
 }
