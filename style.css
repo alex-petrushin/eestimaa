@@ -46,6 +46,7 @@ body {
 	background-color: #0000b4;
 	justify-content: center;
 	align-content: center;
+	margin-bottom: 10px;
 }
 
 h1 {
@@ -119,6 +120,38 @@ nav a:hover {
 
 .news-img {
 	align-content: center;
+}
+
+.first-breaking {
+	margin-top: 10px;
+}
+
+.first-breaking:hover {
+	background-color: #ff4800;
+}
+
+.army {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fcedc5;
+}
+
+.army h3 {
+	width: 65%;
+}
+
+
+.army a {
+	font-family: 'Aino-Headline';
+	font-size: 30px;
+	color: #2e6347;
+	text-decoration: none;
+}
+
+.army a:hover {
+	color: black;
+	text-decoration: underline;
 }
 
 .breaking {
@@ -235,7 +268,7 @@ h3 {
 	background-color: #e6e7e8;
 	height: 500px;
 	display: flex;
-	flex-direction:  row;
+	flex-direction: space-between;
 }
 
 .eestlane h2 {
