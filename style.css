@@ -144,14 +144,22 @@ nav a:hover {
 
 .army a {
 	font-family: 'Aino-Headline';
-	font-size: 30px;
+	font-size: 25px;
 	color: #2e6347;
 	text-decoration: none;
+}
+
+.army a:last-child {
+	color: red;
 }
 
 .army a:hover {
 	color: black;
 	text-decoration: underline;
+}
+
+.army a:hover:last-child {
+	color: red;
 }
 
 .breaking {
@@ -231,75 +239,9 @@ h3 {
 	background-color: white;
 }
 
-.kallas {
-	background-color: #0000b4;
-	height: 500px;
-	display: flex;
-}
-
-.kallas h2 {
-	font-size: 100px;
-	color: white;
-	font-family: 'Aino-Headline', sans-serif;
-	font-weight: 900;
-	align-content: center;
-	margin-top: 0;
-	padding-top: 83px;
-}
-
-.kallas-text {
-	padding-left: 20px;
-}
-
-.kallas p {
-	font-family: 'Aino';
-	font-size: 24px;
-	color: white;
-	width: 40%;
-}
-
-.kallas-img {
-	padding-right: 20px;
-	padding-top: auto;
-}
-
-
-.eestlane {
-	background-color: #e6e7e8;
-	height: 500px;
-	display: flex;
-	flex-direction: space-between;
-}
-
-.eestlane h2 {
-	font-size: 100px;
-	color: black;
-	font-family: 'Aino-Headline', sans-serif;
-	font-weight: 900;
-	align-content: center;
-	margin-top: 0;
-	padding-top: 83px;
-}
-
-.eestlane-text {
-	padding-left: 20px;
-}
-
-.eestlane p {
-	font-family: 'Aino';
-	font-size: 24px;
-	color: black;
-	width: 40%;
-}
-
-.eestlane-img {
-	padding-right: 20px;
-	padding-top: auto;
-}
 
 .latvia {
 	background-color: #ffca9f;
-	height: 820px;
 }
 
 .latvia h2 {
@@ -312,12 +254,17 @@ h3 {
 	padding-top: 83px;
 }
 
-.latvia p {
-	text-align: center;
+.latvia {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .latvia img {
-	height: 500px;
+	width: 70%;
+	height: auto;
+	padding-bottom: 20px;
 }
 
 #box:checked + label,  #box2:checked + label, #box3:checked + label, #box4:checked + label, #box5:checked + label, #box6:checked + label, #box7:checked + label, #box8:checked + label{
@@ -369,6 +316,55 @@ label:hover, label:hover::before, label:hover::after {
 	background-color: #2b7aa1;
 	transition: 0.5s;
 }
+
+
+
+.blue {
+	background-color: #0000b4;
+	display: flex;
+	justify-content: space-between;
+}
+
+.blue-text {
+	margin-left: 20px;
+}
+
+.blue-text h2 {
+	font-family: 'Aino-Headline';
+	font-size: 100px;
+	color: white;
+}
+
+.blue-text p {
+	font-family: 'Aino';
+	font-size: 24px;
+	color: white;
+	width: 40%;
+}
+
+.white {
+	display: flex;
+	justify-content: space-between;
+}
+
+.white-text {
+	margin-left: 20px;
+}
+
+.white-text h2 {
+	font-family: 'Aino-Headline';
+	font-size: 100px;
+	color: black;
+}
+
+.white-text p {
+	font-family: 'Aino';
+	font-size: 24px;
+	color: black;
+	width: 40%;
+}
+
+
 
 @media (max-width: 1350px) {
 	.news-img-img {
@@ -470,6 +466,17 @@ label:hover, label:hover::before, label:hover::after {
 		padding-top: 83px;
 	}
 
+	.blue-text p {
+		width: 60%;
+	}
+
+	.white-text p {
+		width: 60%;
+	}
+
+	.latvia h2 {
+		font-size: 40px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -536,6 +543,38 @@ label:hover, label:hover::before, label:hover::after {
 	display: flex;
 	flex-direction: column-reverse;
 	}
+
+	.army {
+		flex-direction: column;
+	}
+
+	.blue {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.blue-text p {
+		width: 90%;
+	}
+
+	.white {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.white-text p {
+		width: 90%;
+	}
+
+	.latvia img {
+		width: 80%;
+	}
 }
 
 @media (max-width: 525px) {
@@ -553,6 +592,14 @@ label:hover, label:hover::before, label:hover::after {
 		background-color: #0000b4;
 		justify-content: center;
 		align-content: center;
+	}
+
+	.blue h2, .white h2 {
+		font-size: 80px;
+	}
+
+	.latvia img {
+		width: 95%;
 	}
 }
 
@@ -615,5 +662,13 @@ label:hover, label:hover::before, label:hover::after {
 
 	nav a {
 		font-size: 18px;
+	}
+
+	.blue h2, .white h2 {
+		font-size: 60px;
+	}
+
+	.blue img, .white img {
+		width: 90%;
 	}
 }
